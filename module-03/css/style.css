@@ -2,40 +2,28 @@
 
 body {
   font-size: 0;
-  /* background: rgb(161, 161, 158); */
 }
-
 .wrapper {
-  width: 960px;
-  /* background: rgb(153, 153, 139); */
+  width: 900px;
   margin: auto;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .menu {
-  width: 580px;
-  margin: auto;
-  border: none;
-}
-
-.menu-item {
-  width: 100px;
-  height: 40px;
-  /* background: green; */
-  display: inline-block;
-  line-height: 40px;
-  font-size: 14px;
-  margin: 0 60px 0 0;
   text-align: center;
 }
 
-.menu-item-last {
-  margin-right: 0px;
+.menu-item {
+  display: inline-block;
+  line-height: 40px;
+  font-size: 14px;
 }
 .menu-link {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
+  display: block;
+  padding: 0 30px;
 }
 
 .menu-link:hover {
@@ -44,14 +32,12 @@ body {
 
 article {
   width: 420px;
-  /* height: 370px; */
   display: inline-block;
   font-size: 12px;
-  /* background: rgb(68, 214, 10); */
-  margin: 0 30px 135px;
+  margin: 0 0 135px;
   font-family: "Playfair Display", serif;
 }
-
+ 
 .subtitle {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -71,24 +57,44 @@ p {
   line-height: 2em;
 }
 
-.btn-footer {
-}
 
 .button {
   width: 160px;
   height: 60px;
   display: block;
   line-height: 60px;
-  font-size: 16px;
-  /* border-width: 2px; */
-  color: black;
-  text-decoration: none;
+  font-size: 16px;  
   text-align: center;
   border: 1px solid black;
   margin: 0 auto;
-  margin-bottom: 50px;
 }
 
-.button:hover {
-    background: rgba(56, 52, 52, 0.233);
+
+main li {
+    display: inline-block;
+    margin: 0 60px 0 0;    
+}
+main li:nth-child(even){
+    margin-right: 0
+}
+
+
+
+main ul {
+    margin-top: 70px;
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+ button a {
+   text-decoration: none; 
+color: black;
+     
+}
+button a:hover {
+   text-decoration: none; 
+color:navy;
+     
 }
