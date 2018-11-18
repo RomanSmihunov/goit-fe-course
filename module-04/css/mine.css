@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+  box-sizing: border-box
+}
+
+.logo {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+  float: left;
+}
+
+.logo::first-letter {
+  font-family: "Roboto Black", sans-serif;
+  color: #1abc9c;
+
+}
+
+.menu_item {
+  display: block;
+  height: 30px;
+  float: right;
+  line-height: 30px;
+  /* font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 4px 15px; */
+}
+
+.menu_link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 15px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.menu_link:hover {
+  color: #1abc9c;
+}
+
+.header {
+  padding-top: 37px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-family: "Roboto Black", sans-serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  border-bottom: 8px solid #1abc9c;
+  margin-top: 32px;
+}
+.gallery {
+  padding-top: 110px;
+
+}
+
+.products {
+  padding-top: 77px;
+}
+.products_li {
+  width: 255px;
+  display: block;
+  float: left;
+  padding: 15px
+}
+.products_image {
+  /* margin-bottom: -40px; */
+  float: none;
+
+}
+.products_li_p {
+  font-family: "Roboto Black", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  color: white;
+  background-image: linear-gradient(to right, 
+  #323232,
+  #323232 80%,
+  #8c8c8c 80%,
+  #8c8c8c);
+  text-transform: uppercase;
+  padding: 0 15px;
+  display: block;
+  
+}
+
+.price {
+  float: right;
+}
