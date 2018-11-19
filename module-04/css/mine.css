@@ -111,6 +111,7 @@
     #7fd9c7 80%,
     #7fd9c7
   );
+  cursor: pointer;
 }
 .price {
   float: right;
