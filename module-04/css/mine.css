@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .clearfix::after {
   content: "";
   display: table;
@@ -10,7 +11,7 @@
   width: 1170px;
   margin: auto;
   padding: 0 15px;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .logo {
@@ -24,7 +25,6 @@
 .logo::first-letter {
   font-family: "Roboto Black", sans-serif;
   color: #1abc9c;
-
 }
 
 .menu_item {
@@ -32,11 +32,6 @@
   height: 30px;
   float: right;
   line-height: 30px;
-  /* font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  padding: 4px 15px; */
 }
 
 .menu_link {
@@ -56,13 +51,14 @@
 
 .header {
   padding-top: 37px;
-  background: rgba(0, 0, 0, 0.2);
+  /* background: rgba(0, 0, 0, 0.2); */
 }
 
 .title {
   font-family: "Roboto Black", sans-serif;
   font-size: 48px;
   text-align: center;
+  color: #555252
 }
 
 .title::after {
@@ -75,39 +71,90 @@
 }
 .gallery {
   padding-top: 110px;
-
 }
 
 .products {
   padding-top: 77px;
+  font-size: 0;
 }
 .products_li {
   width: 255px;
   display: block;
   float: left;
-  padding: 15px
+  padding: 15px;
 }
 .products_image {
   /* margin-bottom: -40px; */
   float: none;
-
 }
 .products_li_p {
   font-family: "Roboto Black", sans-serif;
   font-size: 18px;
   line-height: 40px;
   color: white;
-  background-image: linear-gradient(to right, 
-  #323232,
-  #323232 80%,
-  #8c8c8c 80%,
-  #8c8c8c);
+  background-image: linear-gradient(
+    to right,
+    #323232,
+    #323232 80%,
+    #8c8c8c 80%,
+    #8c8c8c
+  );
   text-transform: uppercase;
   padding: 0 15px;
   display: block;
-  
 }
-
+.products_li:hover .products_li_p {
+  background-image: linear-gradient(
+    to right,
+    #1abc9c,
+    #1abc9c 80%,
+    #7fd9c7 80%,
+    #7fd9c7
+  );
+}
 .price {
   float: right;
+}
+.news {
+  padding-top: 90px;
+}
+
+.news_ul {
+  padding-top: 65px;
+}
+
+.news_li {
+  width: 350px;
+  padding: 15px;
+  font-family: "Open Sans Light", sans-serif;
+  float: left;
+}
+.news_text {
+  font-size: 14px;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+.news_title {
+  font-family: "Open Sans Semibold", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+}
+.news_title::after {
+  content: "";
+  display: block;
+  width: 136px;
+  margin: 14px 0 30px;
+  border-bottom: 3px solid #1abc9c;
+  /* margin-top: 32px; */
+}
+.news_img {
+  padding-bottom: 15px;
+}
+.news_button {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 60px;
+  background: #1abc9c;
+  padding: 0 40px;
+  color: azure;
 }
