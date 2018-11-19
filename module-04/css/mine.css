@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 .clearfix::after {
   content: "";
   display: table;
@@ -58,7 +58,7 @@
   font-family: "Roboto Black", sans-serif;
   font-size: 48px;
   text-align: center;
-  color: #555252
+  color: #555252;
 }
 
 .title::after {
@@ -76,12 +76,14 @@
 .products {
   padding-top: 77px;
   font-size: 0;
+  display: block;
 }
 .products_li {
   width: 255px;
   display: block;
   float: left;
   padding: 15px;
+  position: relative;
 }
 .products_image {
   /* margin-bottom: -40px; */
@@ -102,6 +104,10 @@
   text-transform: uppercase;
   padding: 0 15px;
   display: block;
+  position: absolute;
+  top: 297px;
+  width: 255px;
+  box-sizing: border-box;
 }
 .products_li:hover .products_li_p {
   background-image: linear-gradient(
@@ -119,11 +125,9 @@
 .news {
   padding-top: 90px;
 }
-
 .news_ul {
   padding-top: 65px;
 }
-
 .news_li {
   width: 350px;
   padding: 15px;
