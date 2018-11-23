@@ -228,11 +228,12 @@ html{
   border-radius: 5px;
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
+  display: block;
 }
 
 .news_button:hover {
   background: #7fd9c7;
-  display: block;
+  /* display: block; */
 }
 
 .title_news {
