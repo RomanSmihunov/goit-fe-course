@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+*::after {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 1140px;
+  margin: auto;
+  padding: 0 15px;
+  /* background: rgba(0, 0, 0, 0.2); */
+}
+.logo {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  color: black;
+}
+.logo::first-letter {
+  font-family: "Roboto Black", sans-serif;
+  color: #1abc9c;
+}
+.menu {
+  min-width: 490px;
+  float: right;
+}
+.menu_item {
+  display: block;
+  height: 30px;
+  float: left;
+  line-height: 30px;
+}
+.menu_link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0 15px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-weight: bold;
+}
+.menu_link:hover {
+  color: #1abc9c;
+}
+
+.header {
+  padding: 22px 0;
+}
+
+.slider {
+  background-image: url(../jpg/slider.jpg);
+  background-size: cover;
+}
+.slider_div {
+  height: 600px;
+  position: relative;
+  color: white;
+  letter-spacing: -0.1rem;
+}
+.slider_text {
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 18%;
+  transform: translateY(-50%);
+}
+.slider_h2 {
+  font-family: "Roboto Black", sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+.slider_p {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.slider_btn {
+  font-size: 100px;
+  color: white;
+  background: #1abc9c;
+  border: none;
+  position: absolute;
+  top: 46%;
+  transform: translateY(-50%);
+  opacity: 0.65;
+}
+.slider_btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.slider_btn_left {
+  left: 0;
+}
+.slider_btn_right {
+  right: 0;
+}
+
+.collection {
+  background: #e9f0fd;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.title {
+  font-family: "Roboto Black", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  color: #555252;
+  margin-bottom: 77px;
+  text-transform: uppercase;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  border-bottom: 8px solid #1abc9c;
+  margin-top: 32px;
+}
+.products {
+  font-size: 0;
+  display: block;
+}
+.products_li {
+  width: 255px;
+  display: block;
+  float: left;
+  position: relative;
+  margin-right: 30px;
+  position: relative;
+}
+
+.products_li:nth-of-type(4n) {
+  margin-right: 0;
+}
+.products_li_div {
+  background-image: linear-gradient(
+    to right,
+    #323232,
+    #323232 80%,
+    #8c8c8c 80%,
+    #8c8c8c
+  );
+  position: absolute;
+  top: 282px;
+  width: 255px;
+  font-family: "Roboto Black", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  color: white;
+}
+.products_li_p {
+  text-transform: uppercase;
+  padding: 0 15px;
+  float: left;
+}
+.products_li:hover .products_li_div {
+  background-image: linear-gradient(
+    to right,
+    #1abc9c,
+    #1abc9c 80%,
+    #7fd9c7 80%,
+    #7fd9c7
+  );
+  cursor: pointer;
+}
+.products_li:hover .sub {
+  display: block;
+}
+.price {
+  float: right;
+}
+.sub {
+  display: none;
+  position: absolute;
+  width: 235px;
+  height: 262px;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 0;
+  top: 10px;
+  left: 10px;
+}
+.sub_ul {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 13%;
+  font-size: 0;
+}
+.sub_li {
+  display: inline-block;
+  margin: 4px;
+  border: 1px solid white;
+  padding: 8px;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+.sub_li:hover {
+  border: 1px solid #1abc9c;
+  background: #1abc9c;
+}
+.sub_li_a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+  display: block;
+}
+.sub_li_a_span {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  float: right;
+}
+.sub_li:nth-of-type(4n) {
+  width: 166px;
+  background: #323232;
+}
+.sub_li:nth-of-type(4n):hover {
+  border: 1px solid #323232;
+}
+.footer {
+  background: #323232;
+  padding: 32px 0;
+}
+
+.footer_p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+.footer_p_a {
+  text-decoration: none;
+  color: #1abc9c;
+}
