@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-family: Montserrat;
+  height: 100px;
+  align-items: center;
+  background: rgba(46, 45, 45, 0.096);
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #95e1d3;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 490px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu_item:hover .menu_link {
+  color: #f38181;
+  border-bottom: 3px solid #f38181;
+}
+
+.menu_link {
+  text-decoration: none;
+  color: #95e1d3;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.services {
+  padding-top: 100px;
+}
+
+.italic {
+  color: #333333;
+  font-family: 'Kaushan Script';
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.title {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  border-bottom: 3px solid #f38181;
+  margin-top: 42px;
+}
+
+.services > ul {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* align-content: space-between; */
+  background: rgba(79, 185, 50, 0.275);
+}
+
+.services_item {
+  flex: 0 0 380px;
+  padding-left: 80px;
+  background: rgba(156, 188, 209, 0.189);
+  background-image: url(../jpg/ALARM.png);
+  background-repeat: no-repeat;
+  background-position: 25px 0;
+}
+
+.services_item:nth-child(2) {
+  background-image: url(../jpg/LINE_GRAPH.png);
+}
+
+.services_item:nth-child(3) {
+  background-image: url(../jpg/_OK.png);
+}
+
+.services_item:nth-child(4) {
+  background-image: url(../jpg/BOOK_2.png);
+}
+
+.services_item:nth-child(5) {
+  background-image: url(../jpg/HOME.png);
+}
+
+.services_item:nth-child(6) {
+  background-image: url(../jpg/IMAGE.png);
+}
+
+.services_title {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.services_text {
+  color: #999999;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.team_p {
+  color: #999999;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
