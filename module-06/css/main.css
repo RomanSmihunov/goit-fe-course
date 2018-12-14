@@ -41,7 +41,7 @@ input[type='radio'].visually-hidden {
   display: flex;
   justify-content: space-between;
   font-family: Montserrat;
-  height: 100px;
+  padding: 30px 0;
   align-items: center;
 }
 
@@ -50,6 +50,7 @@ input[type='radio'].visually-hidden {
   font-weight: 700;
   color: #95e1d3;
   text-decoration: none;
+  display: block;
 }
 
 .menu {
@@ -63,6 +64,17 @@ input[type='radio'].visually-hidden {
 
 .menu_item:hover .menu_link {
   color: #f38181;
+}
+
+.menu_link::after {
+  border-bottom: 3px solid transparent;
+  content: '';
+  display: block;
+  margin-top: 10px;
+  transition: color 200ms linear;
+}
+
+.menu_item:hover .menu_link::after {
   border-bottom: 3px solid #f38181;
 }
 
@@ -71,6 +83,12 @@ input[type='radio'].visually-hidden {
   color: #95e1d3;
   font-weight: 400;
   padding: 10px 0;
+  display: block;
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
 }
 
 .services {
@@ -105,8 +123,7 @@ input[type='radio'].visually-hidden {
   margin-top: 42px;
 }
 
-.services > ul {
-  height: 400px;
+.services_ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -114,30 +131,48 @@ input[type='radio'].visually-hidden {
 }
 
 .services_item {
-  flex: 0 0 380px;
   padding-left: 80px;
-  background-image: url(../jpg/ALARM.png);
-  background-repeat: no-repeat;
-  background-position: 25px 0;
+  position: relative;
+  width: 380px;
 }
 
-.services_item:nth-child(2) {
+.services_item:nth-last-child(n + 4) {
+  margin-bottom: 90px;
+}
+
+.services_item::before {
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  background-image: url(../jpg/ALARM.png);
+  height: 60px;
+  width: 50px;
+  position: absolute;
+  left: 25px;
+  top: 0;
+}
+
+.alarm::before {
+  background-image: url(../jpg/ALARM.png);
+}
+
+.line:before {
   background-image: url(../jpg/LINE_GRAPH.png);
 }
 
-.services_item:nth-child(3) {
+.ok::before {
   background-image: url(../jpg/_OK.png);
 }
 
-.services_item:nth-child(4) {
+.book::before {
   background-image: url(../jpg/BOOK_2.png);
 }
 
-.services_item:nth-child(5) {
+.home::before {
   background-image: url(../jpg/HOME.png);
 }
 
-.services_item:nth-child(6) {
+.image::before {
   background-image: url(../jpg/IMAGE.png);
 }
 
@@ -158,10 +193,16 @@ input[type='radio'].visually-hidden {
   line-height: 24px;
 }
 
+.team {
+  padding-top: 98px;
+  padding-bottom: 80px;
+}
+
 .team_ul {
   display: flex;
   justify-content: space-between;
 }
+
 .team_p {
   color: #999999;
   font-family: Roboto;
@@ -172,10 +213,12 @@ input[type='radio'].visually-hidden {
   width: 940px;
   margin: 0 auto 90px;
 }
+
 .team_card {
   text-align: center;
   width: 380px;
 }
+
 .team_div {
   position: relative;
   width: 380px;
@@ -187,9 +230,13 @@ input[type='radio'].visually-hidden {
 .team_part {
   display: flex;
   flex-direction: column;
-
   width: 380px;
   text-align: center;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
 }
 
 .team_ul_name {
@@ -207,7 +254,6 @@ input[type='radio'].visually-hidden {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 80px;
 }
 
 .sub {
@@ -225,7 +271,7 @@ input[type='radio'].visually-hidden {
   align-items: center;
   opacity: 0;
   cursor: pointer;
-  transition: all 300ms linear;
+  transition: all 200ms linear;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
@@ -238,15 +284,10 @@ input[type='radio'].visually-hidden {
   -moz-transform: translate(-10px, -10px);
   -ms-transform: translate(-10px, -10px);
   -o-transform: translate(-10px, -10px);
-  transition: all 300ms linear;
-  -webkit-transition: all 300ms linear;
-  -moz-transition: all 300ms linear;
-  -ms-transition: all 300ms linear;
-  -o-transition: all 300ms linear;
 }
 
 .team_part:hover .sub {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .sub li {
@@ -299,11 +340,11 @@ input[type='radio'].visually-hidden {
   font-family: 'Montserrat Regular', sans-serif;
   font-size: 14px;
   color: #333333;
-  transition: all 300ms linear;
-  -webkit-transition: all 300ms linear;
-  -moz-transition: all 300ms linear;
-  -ms-transition: all 300ms linear;
-  -o-transition: all 300ms linear;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
 }
 
 .link_footer {
@@ -339,13 +380,14 @@ input[type='radio'].visually-hidden {
   background-color: #1abc9c;
   width: 150px;
   height: 40px;
-  transition: all 300ms linear;
-  -webkit-transition: all 300ms linear;
-  -moz-transition: all 300ms linear;
-  -ms-transition: all 300ms linear;
-  -o-transition: all 300ms linear;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
   cursor: pointer;
 }
+
 .btn:hover {
   background-color: #95e1d3;
 }
