@@ -105,23 +105,19 @@ a {
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
-  background: rgba(0, 0, 0, 0.253);
 }
 
 .logo {
   color: #fed136;
-
   font-family: "Courgette";
   font-size: 26px;
   font-weight: 400;
-  line-height: 41px;
-
+  line-height: 40px;
   color: #fed136;
-  /* letter-spacing: 1.3px; */
 }
 
 .menu {
-  width: 480px;
+  min-width: 480px;
   display: flex;
   justify-content: space-between;
 }
@@ -129,9 +125,9 @@ a {
   color: #222222;
   font-family: Montserrat;
   font-size: 14px;
-
-  line-height: 41px;
+  line-height: 40px;
   text-transform: uppercase;
+  transition: color 200ms linear;
 }
 
 .menu_link:hover {
@@ -208,22 +204,28 @@ a {
 
 .contact {
   padding: 100px 0;
-  background-color: #222222;
-  width: 1400px;
   margin: 0 auto;
   text-align: center;
-  background-image: url(../img/Map_Image.png);
+  background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: center;
 }
 
 .contact_title {
   color: #ffffff;
 }
 
-.form_message input {
+.contact_data {
   width: 455px;
-  line-height: 50px;
+}
+
+.form_message_item {
+  width: 455px;
+  border: none;
+  border-radius: 2px;
+}
+
+.form_message_item::placeholder {
   text-transform: uppercase;
   color: #bbbbbb;
   font-family: Montserrat;
@@ -231,15 +233,27 @@ a {
   font-weight: 700;
 }
 
-.form_message textarea {
-  width: 455px;
-  height: 210px;
-  color: #bbbbbb;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
+.contact_data input {
+  height: 50px;
 }
+
+.required:valid {
+  outline: 2px solid green;
+}
+
+.required:invalid {
+  outline: 2px solid red;
+}
+
+.contact_data input:not(:nth-last-child(1)) {
+  margin-bottom: 30px;
+}
+
+.form_message textarea {
+  height: 210px;
+  resize: none;
+}
+
 .button {
   border: 0;
   width: 240px;
@@ -253,17 +267,12 @@ a {
   text-transform: uppercase;
 }
 
-.form_message_ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: space-between;
-  flex-wrap: wrap;
-  height: 210px;
-  width: 940px;
-  margin-bottom: 30px;
+.button:hover {
+  cursor: pointer;
 }
-.form_message_ul li {
-  display: inline-block;
-  box-sizing: border-box;
+
+.form_message_div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }

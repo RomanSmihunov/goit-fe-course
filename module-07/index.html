@@ -59,45 +59,36 @@
         <h2 class="title contact_title">Contact us</h2>
         <p class="sub_title">Proin iaculis purus consequat sem cure.</p>
         <form class="form_message wrapper" action="#" method="post">
-          <ul class="form_message_ul">
-            <li>
+          <div class="form_message_div">
+            <div class="contact_data">
               <input
+                class="form_message_item required"
                 type="text"
                 name="name"
-                id="name"
                 placeholder="your name *"
                 required
               />
-            </li>
-            <li>
               <input
+                class="form_message_item required"
                 type="email"
                 name="email"
-                id="email"
                 placeholder="your e-mail *"
                 required
               />
-            </li>
-            <li>
               <input
+                class="form_message_item"
                 type="text"
                 name="subject"
-                id="subject"
                 placeholder="subject"
               />
-            </li>
-            <li>
-              <textarea
-                name="textarea"
-                id="textarea"
-                cols="30"
-                rows="10"
-                placeholder="Your message *"
-                required
-              >
-              </textarea>
-            </li>
-          </ul>
+            </div>
+            <textarea
+              class="form_message_item required"
+              placeholder="Your message *"
+              name="textarea"
+              required
+            ></textarea>
+          </div>
           <button class="button" type="submit">Send Message</button>
         </form>
       </section>
