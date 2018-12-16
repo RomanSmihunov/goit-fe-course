@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="wrapper">
+      <nav class="header">
+        <a class="logo" href="#">Golden</a>
+        <ul class="menu">
+          <li class="menu_item"><a class="menu_link" href="#">Home</a></li>
+          <li class="menu_item"><a class="menu_link" href="#">Services</a></li>
+          <li class="menu_item"><a class="menu_link" href="#">Portfolio</a></li>
+          <li class="menu_item"><a class="menu_link" href="#">About</a></li>
+          <li class="menu_item"><a class="menu_link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="services wrapper">
+        <h2 class="title">Services</h2>
+        <p class="sub_title">Proin iaculis purus consequat sem cure.</p>
+        <ul class="services_item">
+          <li class="services_item_li basket">
+            <p class="services_name">E-Commerce</p>
+            <p class="services_text">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </li>
+          <li class="services_item_li laptop">
+            <p class="services_name">Responsive Web</p>
+            <p class="services_text">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </li>
+          <li class="services_item_li locked">
+            <p class="services_name">Web Security</p>
+            <p class="services_text">
+              Proin iaculis purus consequat sem cure digni ssim. Donec
+              porttitora entum suscipit aenean rhoncus posuere odio in
+              tincidunt.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="contact">
+        <h2 class="title contact_title">Contact us</h2>
+        <p class="sub_title">Proin iaculis purus consequat sem cure.</p>
+        <form class="form_message wrapper" action="#" method="post">
+          <ul class="form_message_ul">
+            <li>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name *"
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your e-mail *"
+                required
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="subject"
+              />
+            </li>
+            <li>
+              <textarea
+                name="textarea"
+                id="textarea"
+                cols="30"
+                rows="10"
+                placeholder="Your message *"
+                required
+              >
+              </textarea>
+            </li>
+          </ul>
+          <button class="button" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
