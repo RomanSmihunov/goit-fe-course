@@ -91,11 +91,6 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-  display: block;
-}
-
 .wrapper {
   width: 940px;
   margin: 0 auto;
@@ -114,6 +109,8 @@ a {
   font-weight: 400;
   line-height: 40px;
   color: #fed136;
+  text-decoration: none;
+  display: block;
 }
 
 .menu {
@@ -128,6 +125,8 @@ a {
   line-height: 40px;
   text-transform: uppercase;
   transition: color 200ms linear;
+  text-decoration: none;
+  display: block;
 }
 
 .menu_link:hover {
@@ -209,6 +208,7 @@ a {
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .contact_title {
@@ -250,7 +250,7 @@ a {
 }
 
 .form_message textarea {
-  height: 210px;
+  min-height: 210px;
   resize: none;
 }
 
@@ -269,6 +269,8 @@ a {
 
 .button:hover {
   cursor: pointer;
+  color: #222222;
+  transition: color 200ms linear;
 }
 
 .form_message_div {
