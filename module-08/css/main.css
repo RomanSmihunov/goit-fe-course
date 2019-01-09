@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  background: url(../jpg/background.jpg) center/cover no-repeat;
+  padding-top: 26px;
+  min-height: 540px;
+}
+
+.header_nav {
+  margin-bottom: 38px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.menu_link {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: capitalize;
+  padding: 8px 13px;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: all 300ms ease;
+}
+
+.menu_link:hover {
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+}
+.header_title {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 19px;
+}
+
+.header_subtitle {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  width: 220px;
+  margin: 0 auto 19px;
+}
+.btn {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  max-width: 280px;
+  text-align: center;
+  background-color: #ff4e50;
+  margin: 0 auto;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  line-height: 40px;
+  transition: all 300ms ease;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.partner {
+  padding-top: 69px;
+}
+.partner_title {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.partner_list {
+  /* display: flex; */
+  text-align: center;
+}
+.card {
+  position: relative;
+  width: 230px;
+  margin: 0 auto;
+}
+.card_img {
+  margin-bottom: 21px;
+  border-radius: 50%;
+}
+
+.card::after {
+  position: absolute;
+  display: block;
+  content: " ";
+  top: 88px;
+  left: 134px;
+  width: 37px;
+  height: 37px;
+  border: 4px solid rgb(250, 250, 250);
+  border-radius: 50%;
+}
+
+.tele::after {
+  background: url(../jpg/tele.png) no-repeat center #ff4e50;
+}
+
+.coffe::after {
+  background: url(../jpg/coffe.png) no-repeat center #1cd7ad;
+}
+.colb::after {
+  background: url(../jpg/colb.png) no-repeat center #ffa507;
+}
+.telegram::after {
+  background: url(../jpg/telegram.png) no-repeat center #4e73db;
+}
+
+.card_title {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.card_text {
+  color: #666666;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 29px;
+  line-height: 1.2;
+}
+.partner_btn {
+  color: #ff4e50;
+
+  background-color: transparent;
+
+  border: 2px solid #ff4e50;
+}
+
+.partner_btn:hover {
+  color: #fff;
+
+  background-color: #ff4e50;
+
+  border: 2px solid #ff4e50;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 748px;
+    padding: 0 40px;
+  }
+
+  .header {
+    background: url(../jpg/background.jpg) center/cover no-repeat;
+    padding-top: 46px;
+    min-height: 700px;
+  }
+
+  .header_nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .header_title {
+    font-size: 52px;
+    margin: 0 auto 40px;
+    width: 510px;
+  }
+
+  .header_subtitle {
+    font-size: 24px;
+    min-width: 510px;
+    margin: 0 auto 34px;
+  }
+
+  .partner {
+    padding-bottom: 40px;
+  }
+  .partner_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 480px;
+    margin: 0 auto;
+  }
+  .partner_title {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .wrapper {
+    width: 940px;
+  }
+
+  .partner_list {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+  }
+  .partner {
+    padding-bottom: 74px;
+  }
+}
