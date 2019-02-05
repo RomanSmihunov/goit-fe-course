@@ -1,0 +1,12 @@
+.services {
+  padding: 46px 0 50px;
+
+  &__list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    margin-bottom: 65px;
+  }
+}

@@ -1,0 +1,112 @@
+body {
+  font-family: $main-font-stack;
+  color: $text-color;
+  padding: 0;
+  letter-spacing: 0em;
+  margin: 0;
+  font-size: 14px;
+}
+
+div,
+p,
+form,
+input,
+a,
+span,
+button,
+ul,
+li {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $second-font;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $primary-dark-color;
+  margin: 0;
+}
+
+h1 {
+  font-size: 150px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  border-bottom: 3px solid $second-dark-color;
+  margin-top: 35px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a,
+button,
+input {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+input,
+input:hover,
+input:focus,
+input:active,
+button,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+}
+
+.d-flex {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}

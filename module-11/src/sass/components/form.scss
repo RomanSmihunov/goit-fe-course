@@ -1,0 +1,54 @@
+.form {
+  & input {
+    width: 228px;
+    line-height: 38px;
+    border: 1px solid $form-color;
+    border-right: none;
+    padding-left: 13px;
+  }
+
+  & input::-webkit-input-placeholder {
+    color: $form-color;
+    font-size: 15px;
+    font-family: $main-font-stack;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  & input:-ms-input-placeholder {
+    color: $form-color;
+    font-size: 15px;
+    font-family: $main-font-stack;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  & input::-ms-input-placeholder {
+    color: $form-color;
+    font-size: 15px;
+    font-family: $main-font-stack;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  & input::placeholder {
+    color: $form-color;
+    font-size: 15px;
+    font-family: $main-font-stack;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    font-family: $second-font;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+    color: $primary-white-color;
+    background: $accent-color;
+  }
+}

@@ -1,0 +1,9 @@
+.header {
+  background: url(../img/eagle-min.jpg) no-repeat center top / cover;
+  padding: 28px 0 230px;
+  color: $primary-white-color;
+
+  &__navigation {
+    margin-bottom: 160px;
+  }
+}

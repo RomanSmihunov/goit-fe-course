@@ -1,0 +1,41 @@
+.menu {
+  margin-left: auto;
+  color: $primary-white-color;
+  width: 50%;
+  font-family: "Montserrat", sans-serif;
+
+  &__link {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 0 10px;
+    border-bottom: transparent solid 3px;
+    height: 38px;
+    color: $primary-white-color;
+
+    &_cart {
+      width: 18px;
+      height: 38px;
+    }
+
+    &_glass {
+      width: 18px;
+      height: 38px;
+    }
+
+    &:hover {
+      color: $second-white-color;
+      border-bottom: $second-white-color solid 3px;
+    }
+
+    & svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: $primary-white-color;
+    }
+
+    &:hover svg {
+      fill: $second-white-color;
+    }
+  }
+}

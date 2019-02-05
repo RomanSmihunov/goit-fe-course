@@ -1,0 +1,52 @@
+.team-sub {
+  position: absolute;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 380px;
+  height: 470px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(252, 227, 138, 0.9)),
+    to(rgba(243, 129, 129, 0.9))
+  );
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+
+  &__link {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: $second-white-color;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 1px;
+  }
+
+  &__icon {
+    display: block;
+    width: 26px;
+    height: 26px;
+    fill: $second-dark-color;
+  }
+
+  &__link:hover {
+    background-color: $second-dark-color;
+  }
+
+  &__link:hover .team-sub__icon {
+    fill: $primary-white-color;
+  }
+}

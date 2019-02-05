@@ -1,0 +1,12 @@
+.footer {
+  padding: 10px 0;
+
+  &__text {
+    font-family: $second-font;
+    color: $primary-dark-color;
+  }
+
+  &__text span {
+    color: $second-dark-color;
+  }
+}

@@ -1,0 +1,45 @@
+.services-card {
+  padding-left: 80px;
+  position: relative;
+  width: 380px;
+
+  &:nth-last-child(n + 4) {
+    margin-bottom: 100px;
+  }
+
+  &::before {
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 60px;
+    width: 50px;
+    position: absolute;
+    left: 25px;
+    top: 0;
+  }
+
+  &_alarm::before {
+    background-image: url(../images/alarm.png);
+  }
+
+  &_line::before {
+    background-image: url(../images/line.png);
+  }
+  &_computer::before {
+    background-image: url(../images/_computer.png);
+  }
+  &_book::before {
+    background-image: url(../images/book.png);
+  }
+  &_home::before {
+    background-image: url(../images/home.png);
+  }
+  &_image::before {
+    background-image: url(../images/image.png);
+  }
+
+  &__title {
+    margin: 0 0 14px;
+    font-weight: 400;
+  }
+}

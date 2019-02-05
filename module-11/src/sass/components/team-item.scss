@@ -1,0 +1,12 @@
+.team-item {
+  text-align: center;
+  width: 380px;
+
+  &__wrapper {
+    position: relative;
+    width: 380px;
+    height: 470px;
+    background: $accent-color;
+    margin-bottom: 30px;
+  }
+}
