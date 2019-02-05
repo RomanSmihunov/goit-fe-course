@@ -1,4 +1,5 @@
 .services__list {
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 

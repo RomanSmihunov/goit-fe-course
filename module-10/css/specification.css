@@ -16,6 +16,7 @@ span,
 button,
 ul,
 li {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -73,6 +74,7 @@ a:active {
 a,
 button,
 input {
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -104,22 +106,28 @@ button:active {
 }
 
 .btn:focus {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 .d-flex {
-  display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .justify-content-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
