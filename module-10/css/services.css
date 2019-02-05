@@ -1,0 +1,53 @@
+.services__list {
+  flex-wrap: wrap;
+}
+
+.services-card {
+  padding-left: 80px;
+  position: relative;
+  width: 380px;
+}
+
+.services-card:nth-last-child(n + 4) {
+  margin-bottom: 90px;
+}
+
+.services-card::before {
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 60px;
+  width: 50px;
+  position: absolute;
+  left: 25px;
+  top: 0;
+}
+
+.services-card_alarm::before {
+  background-image: url(../img/icon/alarm.svg);
+}
+
+.services-card_line::before {
+  background-image: url(../img/icon/line-graph.svg);
+}
+.services-card_computer::before {
+  background-image: url(../img/icon/computer.svg);
+}
+.services-card_book::before {
+  background-image: url(../img/icon/book.svg);
+}
+.services-card_home::before {
+  background-image: url(../img/icon/home.svg);
+}
+.services-card_image::before {
+  background-image: url(../img/icon/image.svg);
+}
+
+.services-card__title {
+  margin: 0 0 16px;
+  font-weight: 400;
+}
+
+.services__title {
+  margin-bottom: 60px;
+}

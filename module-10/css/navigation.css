@@ -1,0 +1,49 @@
+.logo {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+}
+
+.menu {
+  margin-left: auto;
+  color: #ffffff;
+  width: 50%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu__link {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 0 10px;
+  border-bottom: transparent solid 3px;
+  height: 38px;
+  color: #ffffff;
+}
+
+.menu__link_cart {
+  width: 18px;
+  height: 38px;
+}
+
+.menu__link_glass {
+  width: 18px;
+  height: 38px;
+}
+
+.menu__link:hover {
+  color: #fce38a;
+  border-bottom: #fce38a solid 3px;
+}
+.menu__link svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #ffffff;
+}
+
+.menu__link:hover svg {
+  fill: #fce38a;
+}

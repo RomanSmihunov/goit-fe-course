@@ -1,0 +1,23 @@
+.offer {
+  flex-direction: column;
+}
+
+.offer__subtitle {
+  font-size: 72px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.offer__title {
+  width: 850px;
+  line-height: 140px;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 120px;
+}
+
+.offer__btn {
+  line-height: 34px;
+  width: 154px;
+}

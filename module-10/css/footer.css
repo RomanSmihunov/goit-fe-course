@@ -1,0 +1,37 @@
+.footer__text {
+  font-family: "Montserrat", sans-serif;
+  color: #333333;
+}
+
+.footer__text span {
+  color: #f38181;
+}
+
+.form input {
+  width: 228px;
+  line-height: 38px;
+  border: 1px solid #e5e5e5;
+  border-right: none;
+  padding-left: 13px;
+}
+
+.form input::placeholder {
+  color: #e5e5e5;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.form__btn {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  width: 150px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  background: #95e1d3;
+}

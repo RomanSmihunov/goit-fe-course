@@ -1,0 +1,136 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #999999;
+  padding: 0;
+  letter-spacing: 0em;
+  margin: 0;
+  font-size: 14px;
+}
+
+div,
+p,
+form,
+input,
+a,
+span,
+button,
+ul,
+li {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+}
+
+h1 {
+  font-size: 150px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  border-bottom: 3px solid #f38181;
+  margin-top: 42px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a,
+button,
+input {
+  transition: all 0.5s ease;
+}
+
+input,
+input:hover,
+input:focus,
+input:active,
+button,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  border: 3px solid #fff;
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: #e07877;
+  color: #fce38a;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.d-flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000;
+}
