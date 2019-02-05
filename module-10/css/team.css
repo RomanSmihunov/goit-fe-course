@@ -1,5 +1,5 @@
 .team__title {
-  margin: 0 0 40px;
+  margin: 0 0 45px;
 }
 
 .team__text {
@@ -80,6 +80,7 @@
 
 .team-card__name {
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .team-card__position {

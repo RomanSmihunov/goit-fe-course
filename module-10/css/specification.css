@@ -40,6 +40,7 @@ h4 {
   text-transform: uppercase;
   font-weight: 700;
   color: #000;
+  margin: 0;
 }
 
 h1 {
@@ -56,7 +57,7 @@ h2::after {
   width: 60px;
   margin: 0 auto;
   border-bottom: 3px solid #f38181;
-  margin-top: 42px;
+  margin-top: 35px;
 }
 
 h3 {
@@ -130,7 +131,7 @@ button:active {
 .subtitle {
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-align: center;
   color: #000;
 }

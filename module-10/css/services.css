@@ -9,7 +9,7 @@
 }
 
 .services-card:nth-last-child(n + 4) {
-  margin-bottom: 90px;
+  margin-bottom: 100px;
 }
 
 .services-card::before {
@@ -44,10 +44,10 @@
 }
 
 .services-card__title {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   font-weight: 400;
 }
 
 .services__title {
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
